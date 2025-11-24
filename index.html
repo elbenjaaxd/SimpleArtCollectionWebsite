@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Fragments | Conceptual Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="nav-toggle" id="navToggle">Menu</nav>
+    <div class="menu-overlay" id="menuOverlay">
+        <ul class="menu-list">
+            <li onclick="navigateToSection('intro')">Home</li>
+            <li onclick="navigateToPainting(0)">I. The Void</li>
+            <li onclick="navigateToPainting(1)">II. Static Noise</li>
+            <li onclick="navigateToPainting(2)">III. Ephemeral</li>
+            <li onclick="navigateToPainting(3)">IV. Structure</li>
+            <li onclick="navigateToPainting(4)">V. Decay</li>
+            <li onclick="navigateToPainting(5)">VI. Rebirth</li>
+            <li onclick="navigateToSection('author')">The Artist</li>
+        </ul>
+        <button class="menu-close" onclick="toggleMenu()">Close</button>
+    </div>
+
+    <!-- Intro Section -->
+    <section id="intro" class="section active">
+        <div class="intro-content">
+            <h1 class="collection-title">ETHEREAL FRAGMENTS</h1>
+            <p class="collection-subtitle">A Conceptual Collection</p>
+            <button class="btn-primary" onclick="startExhibition()">Enter Exhibition</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="painting-container">
+            <div class="art-frame">
+                <img id="artImage" src="" alt="Artwork" class="art-image">
+            </div>
+            <div class="tombstone">
+                <h2 id="artTitle" class="art-title">Title</h2>
+                <div class="meta-info" id="artMeta">
+                    <span class="meta-line">Medium</span>
+                    <span class="meta-line">Year</span>
+                    <span class="meta-line">Dimensions</span>
+                </div>
+                <p class="art-description" id="artDescription">Description goes here.</p>
+                <button class="btn-primary" id="nextButton" onclick="nextPainting()">Next Work</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="section">
+        <div class="author-content">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" alt="Artist" class="author-image">
+            <h2 class="author-name">Elena Vance</h2>
+            <p class="author-bio">
+                Elena Vance is a conceptual artist based in Mexico City. Her work explores the boundaries between silence and noise, utilizing negative space to evoke emotional resonance. "Ethereal Fragments" is her latest study on the permanence of memory in the digital age.
+            </p>
+            <button class="btn-primary" onclick="navigateToSection('intro')">Restart Collection</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
