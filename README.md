@@ -13,36 +13,12 @@ A minimalistic landing page for a series of conceptual art paintings with smooth
 
 ## Setup Instructions
 
-### Prerequisites
+This is a static website with no dependencies. Simply open `index.html` in your web browser to view the site.
 
-1. Install [Node.js](https://nodejs.org/) (which includes npm)
-   - Download and install the LTS version
-   - Verify installation by running: `node --version` and `npm --version`
-
-### Installation
-
-1. Open a terminal in the project directory
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-### Running the Server
-
-Start the development server:
-```bash
-npm start
-```
-
-This will:
-- Start live-server on `http://localhost:3000`
-- Automatically open the page in your browser
-- Watch for file changes and reload automatically
-
-Alternatively, use the dev script for more detailed watching:
-```bash
-npm run dev
-```
+You can also use any local web server if you prefer:
+- Python: `python -m http.server 8000`
+- PHP: `php -S localhost:8000`
+- Or any other static file server
 
 ## Project Structure
 
@@ -51,7 +27,6 @@ npm run dev
 ├── index.html      # Main HTML structure
 ├── styles.css      # All styling and animations
 ├── script.js       # Navigation and painting logic
-├── package.json    # Node.js dependencies
 └── README.md       # This file
 ```
 
